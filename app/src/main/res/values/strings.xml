@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Court Counter</string>
+    <string name="player_one">Player 1</string>
+    <string name="player_two">Player 2</string>
+    <string name="bonus">Bonuses:</string>
+    <string name="under">Under</string>
+    <string name="over">Over</string>
+    <string name="king">King</string>
+    <string name="ten">10</string>
+    <string name="ace">Ace</string>
+    <string name="zero">0</string>
+    <string name="twenty">20</string>
+    <string name="forty">40</string>
+    <string name="new_set">New set</string>
+    <string name="new_game">New game</string>
+    <string name="winner">The winner is: </string>
+    <string name="point">Points</string>
+    <string name="card">Cards</string>
+</resources>

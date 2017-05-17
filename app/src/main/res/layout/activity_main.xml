@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context="com.example.android.mycourtcounter.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/winner"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="@dimen/small_margin"/>
+
+                <TextView
+                    android:id="@+id/winner"
+                    style="@style/Result"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/end"
+                    style="@style/Result"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <Button
+                    style="@style/ResetButton"
+                    android:onClick="resetScores"
+                    android:text="@string/new_set" />
+                <Button
+                    style="@style/ResetButton"
+                    android:onClick="resetGame"
+                    android:text="@string/new_game" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/BasicImage"
+            android:src="@drawable/cards" />
+
+        <LinearLayout style="@style/BasicLayout">
+
+            <LinearLayout style="@style/HorizontalLayout">
+
+                <TextView
+                    style="@style/BlackText"
+                    android:text="@string/player_one" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout style="@style/HorizontalLayout">
+
+                        <TextView
+                            style="@style/BlackText"
+                            android:text="@string/card" />
+
+                        <TextView
+                            android:id="@+id/player1Card"
+                            style="@style/Result"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/HorizontalLayout">
+
+                        <TextView
+                            style="@style/BlackText"
+                            android:text="@string/point" />
+
+                        <TextView
+                            android:id="@+id/player1Score"
+                            style="@style/Result"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add2Player1"
+                        android:text="@string/under" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add3Player1"
+                        android:text="@string/over" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add4Player1"
+                        android:text="@string/king" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add10Player1"
+                        android:text="@string/ten" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add11Player1"
+                    android:text="@string/ace" />
+
+                <TextView
+                    style="@style/BlackText"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/bonus" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add20Player1"
+                        android:text="@string/twenty" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add40Player1"
+                        android:text="@string/forty" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLayout">
+
+                <TextView
+                    style="@style/BlackText"
+                    android:text="@string/player_two" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout style="@style/HorizontalLayout">
+
+                        <TextView
+                            style="@style/BlackText"
+                            android:text="@string/card" />
+
+                        <TextView
+                            android:id="@+id/player2Card"
+                            style="@style/Result"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/HorizontalLayout">
+
+                        <TextView
+                            style="@style/BlackText"
+                            android:text="@string/point" />
+
+                        <TextView
+                            android:id="@+id/player2Score"
+                            style="@style/Result"
+                            android:text="@string/zero" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add2Player2"
+                        android:text="@string/under" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add3Player2"
+                        android:text="@string/over" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add4Player2"
+                        android:text="@string/king" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add10Player2"
+                        android:text="@string/ten" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="add11Player2"
+                    android:text="@string/ace" />
+
+                <TextView
+                    style="@style/BlackText"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/bonus" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add20Player2"
+                        android:text="@string/twenty" />
+
+                    <Button
+                        style="@style/Button"
+                        android:onClick="add40Player2"
+                        android:text="@string/forty" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

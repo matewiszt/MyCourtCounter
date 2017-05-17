@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BasicLayout">
+    <!-- Customize your theme here. -->
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+</style>
+
+    <style name="BasicImage">
+    <!-- Customize your theme here. -->
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    <item name="android:adjustViewBounds">true</item>
+</style>
+
+    <style name="Result">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/important_text</item>
+
+    </style>
+
+    <style name="HorizontalLayout">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Button">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="ResetButton" parent="Button">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="BlackText">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>
