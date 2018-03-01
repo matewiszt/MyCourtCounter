@@ -15,4 +15,4 @@ I created this app when I was doing the Android Basics Nanodegree at <a href="ht
 
 ### Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/matewiszt/MyCourtCounter/Screenshot_2017-02-19_21.28.47.png)
+![Screenshot](https://github.com/matewiszt/MyCourtCounter/raw/master/Screenshot_2017-02-19_21.28.47.png)
