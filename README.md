@@ -12,3 +12,7 @@ I created this app when I was doing the Android Basics Nanodegree at <a href="ht
 <li>Over and king of the same suit: 20</li>
 <li>Over and king of the favoured color: 40</li>
 </ul>
+
+###Screenshot
+
+![Screenshot](Screenshot 2017-02-19 21.28.47.png)
