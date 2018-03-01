@@ -13,6 +13,6 @@ I created this app when I was doing the Android Basics Nanodegree at <a href="ht
 <li>Over and king of the favoured color: 40</li>
 </ul>
 
-###Screenshot
+### Screenshot
 
-![Screenshot](Screenshot 2017-02-19 21.28.47.png)
+![Screenshot](https://raw.githubusercontent.com/matewiszt/MyCourtCounter/Screenshot_2017-02-19_21.28.47.png)
